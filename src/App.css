@@ -3,6 +3,10 @@
   margin-top: 0;
   box-sizing: border-box;
   
+  
+}
+body{
+  background-color: #282c34;
 }
 
 header{
@@ -15,7 +19,7 @@ header{
 
 
 .App {
-  background-color: #282c34;
+  
   min-height: 100vh;
   display: flex;
   
@@ -24,6 +28,7 @@ header{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 1rem;
   
   
 }
@@ -35,21 +40,16 @@ header{
 
 
 
-/*.clima-agora{
-  width: 90%;
 
-}
-.Painel{
-  width: 100%;
-  
-}*/
-
-
-@media (min-width: 1024px)  { 
+@media screen and (min-width: 1024px)  { 
   .App{
     justify-content: space-around;
   }
-
+  
 
  }
+
+
+
+
 

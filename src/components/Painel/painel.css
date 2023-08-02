@@ -1,19 +1,51 @@
 .Painel{
-    background-color: beige;
-    width: 80%;
-    height: 80%;
+    background-color: rgb(32, 34, 33);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     border-radius: .6rem;
     margin-top: 2rem;
+    padding: 1rem;
+}
+
+.buscar{
+
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+input{
+
+    width: 80%;
+    height: 2rem;
+    border-radius: .5rem;
+    border: none;
+    align-items: center;
+}
+
+.btn{
+
+    min-height: 2rem;
+    padding: .5rem;
+    color: white;
+    background-color: rgb(223, 100, 100);
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+
+}
+
+.btn:hover{
+
+    color:rgb(24, 22, 22);
+    background-color: rgb(255, 255, 255);
+
 }
 
 @media (min-width: 1024px)  { 
   
-    .Painel{
-        width: 50%;
-    }
+    
 
 }

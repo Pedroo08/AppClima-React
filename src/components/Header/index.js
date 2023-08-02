@@ -9,7 +9,7 @@ function Header({city,country}){
     return(
         <header>
             <div className='local'>{city},{country} </div>
-            <div className='time'> {time.getHours()}:{time.getMinutes()} </div>
+            
 
         </header>
     )

@@ -40,30 +40,40 @@ function App() {
  
  if(location == false){
 
-    alert("Você precisa ativar a localização")
+    
     return(
-      <main>Você precisa ativar a localização</main>
+      <main>
+        Você precisa ativar a localização
+         <Painel className="secundary"/>
+      </main>
   )}
 
   else if (weather == false){
-      return <main>Carregando...</main>
+      return <main>
+        Carregando...
+         <Painel className="secundary"/>
+      </main>
   }
   else{
     return (
    
       <main className="App">
        
-          <section className='principal'>
+       
+          <div className='principal'>
 
               <header>
-                  <div className='local'>{weather.name},{weather.sys.country}</div>
+                  <div className='local'> {weather.name},{weather.sys.country} </div>
                   <div className='time'> </div>
               </header>
               <Cnow Temperatura={weather.main.temp} situacao= {weather.weather[0].description.toUpperCase()} img={weather.weather[0].icon}/>
               <Detail humidity={weather.main.humidity} pressure={weather.main.pressure} 
               speed={weather.wind.speed}/>
-          </section>
-          
+             
+          </div>
+
+          <Painel className="secundary"/>
+        
       </main>
     );}
 }
