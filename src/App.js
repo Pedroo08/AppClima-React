@@ -4,6 +4,7 @@ import './App.css';
 import Cnow from './components/CNow';
 import Painel from './components/Painel';
 import Detail from './components/Detail';
+import Top from './components/Top'
 import Header from './components/Header'
 import axios from 'axios';
 
@@ -42,36 +43,23 @@ function App() {
 
     
     return(
-      <main>
-        Você precisa ativar a localização
-         <Painel className="secundary"/>
+      <main className="App">
+        <Top/>
+        <Painel className="secundary"/>
+    
       </main>
   )}
 
   else if (weather == false){
-      return <main>
-        Carregando...
-         <Painel className="secundary"/>
-      </main>
+      return <main className="App-loading">
+                <span className='loanding'>Carrgando...</span>
+            </main>
   }
   else{
     return (
    
       <main className="App">
-       
-       
-          <div className='principal'>
-
-              <header>
-                  <div className='local'> {weather.name},{weather.sys.country} </div>
-                  <div className='time'> </div>
-              </header>
-              <Cnow Temperatura={weather.main.temp} situacao= {weather.weather[0].description.toUpperCase()} img={weather.weather[0].icon}/>
-              <Detail humidity={weather.main.humidity} pressure={weather.main.pressure} 
-              speed={weather.wind.speed}/>
-             
-          </div>
-
+          <Top city= {weather.name} country={weather.sys.country} img={weather.weather[0].icon} Temperatura={weather.main.temp}/>
           <Painel className="secundary"/>
         
       </main>

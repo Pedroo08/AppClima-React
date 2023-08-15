@@ -6,7 +6,6 @@ import Cnow from "../CNow";
 import Detail from "../Detail";
 import React, {  useState } from 'react';
 import axios from 'axios';
-import { click } from '@testing-library/user-event/dist/click';
 
 function Painel({object}){
 

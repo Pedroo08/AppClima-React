@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     border-radius: .6rem;
-    margin-top: 2rem;
+    margin: 2rem;
     padding: 1rem;
 }
 
@@ -18,11 +18,11 @@
 }
 input{
 
-    width: 80%;
+    width: 90%;
     height: 2rem;
     border-radius: .5rem;
     border: none;
-    align-items: center;
+    text-align: center;
 }
 
 .btn{
@@ -44,8 +44,4 @@ input{
 
 }
 
-@media (min-width: 1024px)  { 
-  
-    
 
-}

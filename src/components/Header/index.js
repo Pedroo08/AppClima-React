@@ -7,11 +7,11 @@ function Header({city,country}){
     const [location, setLocation] = useState(false);
 
     return(
-        <header>
+        <span>
             <div className='local'>{city},{country} </div>
             
 
-        </header>
+        </span>
     )
 }
 
