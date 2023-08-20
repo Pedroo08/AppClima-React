@@ -19,7 +19,6 @@ function Top({city,country,img,Temperatura,situacao}){
         </header>
     )}
     
-    else{
 
         return(
             <header className="top-content">
@@ -32,6 +31,6 @@ function Top({city,country,img,Temperatura,situacao}){
 
     }
 
-}
+
 
 export default Top;
