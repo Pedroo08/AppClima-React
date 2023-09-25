@@ -1,15 +1,13 @@
 # Aplicação sobre clima criada com React js
 
-link para testar: https://appclima-pedro.web.app/
+Teste a aplicação aqui: https://appclima-pedro.web.app/
 
-Obs: é necessário ativar a localização para o melher aproveitamento do app.
+Esta aplicação desempenhou um papel fundamental no aprofundamento dos meus conhecimentos em React.js e enriqueceu o meu portfólio. Através dela, pude aprimorar minhas habilidades em front-end, aprendendo sobre consumo de APIs, deploy com Firebase, e a utilização de hooks, entre outros.
 
-Essa aplicação foi util para aprofundar os conhecimentos em React
-e complementar o portfólio. Atráves dela pude melhorar minhas habilidades
-em front-end aprendendo sobre consumo de api,deploy com firebase,hooks e etc.
+## 📡Tecnologias Utilizadas:
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 
-Pacotes usados:
-- axios
-
-Api consumida:
-- Open weather
+## 📖 Descrição:
+Esta é uma aplicação frontend desenvolvida em React.js que fornece informações como temperatura, umidade e velocidade do vento para uma cidade específica. A aplicação consome a API Open Weather usando o Axios. Para obter o melhor aproveitamento da aplicação, é necessário permitir o acesso à localização, pois ela também fornece informações sobre o clima na sua localidade atual.
